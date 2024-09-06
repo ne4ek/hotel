@@ -137,12 +137,12 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     height: 156px;
     width: 563px;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease
 
 }
 .number-text:hover{
     background-color: rgba(0, 0, 0, 0.8);
     height: 200px;
-
 
 }
 .number-text p {
@@ -158,6 +158,10 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     line-height: 17.07px;
     color: white;
     cursor: pointer;
+    transition: all 0.5s ease;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
 }
 
 .number-text li:hover{
@@ -240,4 +244,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 
 #reviewer-icon {
     margin: 0px 19px 0px 19px;
+}
+.bottom-line-img{
+    width: 100%;
 }
