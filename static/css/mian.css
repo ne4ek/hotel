@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
+    color: #585858;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.sect1 {
+    position: relative;
+    height: 680px;
+    background-image: url("../image/mounts.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector {
+    display: flex;
+    height: 124px;
+    width: 1224px;
+    background-color: white;
+    justify-content: center;
+}
+
+.selector ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    margin-right: 46px;
+    width: 784px;
+}
+
+.selector li {
+    display: flex;
+    flex-direction: column;
+    height: 62px;
+    width: 200px;
+
+}
+
+.selector label {
+    font-size: 16px;
+    color: #585858;
+    font-weight: 600;
+}
+
+.selector li label {
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.selector li input {
+    height: 36px;
+    margin-top: auto;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #D9D9D9;
+    background-color: #FAFAFA;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(50%);
+    opacity: 0.5;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
+
+
+.selector button {
+    width: 140px;
+    height: 36px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 0px #3F8CFF80;
+    background: #3F8CFF;
+    color: white;
+    border: 0px;
+}
+
+.bottom-line-img {
+    position: absolute;
+    bottom: 0px;
+}
+
+
+/* section 2 */
+.sect2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sect2-content h2 {
+    text-align: center;
+}
+
+.sect2-content {
+    width: 1200px;
+    margin: 36px 0px 80px 0px;
+
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.number ul {
+    list-style-type: none;
+}
+
+.number-text {
+    position: absolute;
+    bottom: 12px;
+    height: 156px;
+    width: 563px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.number-text:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 200px;
+
+
+}
+.number-text p {
+    line-height: 29.26px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.number-text li {
+    margin-left: 35px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: white;
+    cursor: pointer;
+}
+
+.number-text li:hover{
+    font-size: 24px;
+    line-height: 27.07px;
+}
+
+#number1 {
+    background-image: url("../image/number1.png");
+
+}
+
+#number2 {
+    background-image: url("../image/number2.png");
+}
+
+#number3 {
+    background-image: url("../image/number3.png");
+}
+
+#number4 {
+    background-image: url("../image/number4.png");
+}
+
+#sub-title-about {
+    margin-top: 80px;
+}
+
+.about {
+    width: 1094px;
+    margin: 40px auto 0px auto;
+    display: flex;
+}
+
+.about-text {
+    margin-left: 37px;
+}
+
+#sub-title-feedback {
+    margin-top: 80px;
+    /* margin-bottom: 40px; */
+}
+
+.feedback {
+    width: 1214px;
+    height: 250px;
+    background-image: url("../image/feedback-area.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feedback-text {
+    width: 976px;
+
+}
+
+.feedback-text p {
+    font-size: 20px;
+    line-height: 24.38px;
+    text-align: center;
+}
+
+#reviewer-name {
+    font-size: 26px;
+    line-height: 31.69px;
+    text-align: center;
+}
+
+.feedback-text-and-name {
+    margin: auto;
+}
+
+.reviewer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviewer-icon {
+    margin: 0px 19px 0px 19px;
+}

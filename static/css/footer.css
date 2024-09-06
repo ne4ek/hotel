@@ -1,0 +1,49 @@
+footer{
+    height: 380px;
+}
+
+footer *{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    height: 320px;
+    background-color: #777777;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+
+
+
+.footer-title{
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.footer-content span{
+    font-size: 14px;
+    line-height: 25.28px;
+}
+
+.footer-geolocation p{
+    margin-bottom: 7px;
+}
+
+.footer-copyrighting{
+    background-color: #626262;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+}

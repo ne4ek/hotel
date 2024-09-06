@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mian.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="head">
+        <div class="head-content">
+            <div class="head-information">
+                <div class="left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                    </svg>
+                    <span>Абхазия, Цандрыпш, ул.Октябрьская, д.492</span>
+                </div>
+                <div class="right">
+                    <div class="mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                        </svg>
+                        <span>booking@valentinahouse.ru</span>
+                    </div>
+                    <div class="telephone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        <span>8 (862) 279-56-89</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sect2">
+                <div class="title-and-navbar">
+                    <img class="header-burger" src="{{ url_for('static', filename='image/burger.png')}}" alt="">
+                    <h1>Valentina <br>Guest House</h1>
+                    <ul class="navbar">
+                        <li><a href="#">
+                                <p>ГЛАВНАЯ</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>НОМЕРА И ЦЕНЫ</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>СТАТЬИ</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>ИНФОРМАЦИЯ</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>ПОЛНЫЙ ПАНСИОН</p>
+                            </a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#"><img src="{{ url_for('static', filename='image/telegram.svg')}}" alt=""></a>
+                        <a href="#"><img src="{{ url_for('static', filename='image/whatsup.svg')}}" alt=""></a>
+                        <a href="#"><img src="{{ url_for('static', filename='image/facebook.svg')}}" alt=""></a>
+                        <a href="#"><img src="{{ url_for('static', filename='image/vk.svg')}}" alt=""></a>
+                        <a href="#"><img src="{{ url_for('static', filename='image/instagram.svg')}}" alt=""></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </header>
+    <main class="main">
+        <section class="sect1">
+            <div class="selector">
+                <form action="#">
+                    <ul>
+                        <li>
+                            <label for="start-visit">Даты заезда</label>
+                            <input type="date" id="start-visit">
+                        </li>
+                        <li>
+                            <label for="end-visit">Даты выезда</label>
+                            <input type="date" id="end-visit">
+                        </li>
+                        <li>
+                            <label for="visitors">Гостей</label>
+                            <input type="number" id="visitors">
+                        </li>
+                    </ul>
+                </form>
+                <button>
+                    Проверить
+                </button>
+            </div>
+            <img src="{{ url_for('static', filename='image/Vector.png')}}" alt="" class="bottom-line-img">
+        </section>
+        <section class="sect2">
+            <div class="sect2-content">
+                <h2 class="sub-title our-numbers-title">НАШИ НОМЕРА</h2>
+                <div class="numbers">
+                    <div class="left-numbers">
+                        <div class="number" id="number1">
+                            <div class="number-text">
+                                <p>2-х местный</p>
+                                <ul>
+                                    <li>-Площадь номера: 11 м2</li>
+                                    <li>-1 двуспальная кровать или 2 односпальные кровати</li>
+                                    <li>-Кондиционер</li>
+                                    <li>-Интернет</li>
+                                    <li>-Телевизор</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="number" id="number2">
+                            <div class="number-text">
+                                <p>Deluxe</p>
+                                <ul>
+                                    <li>-Площадь номера: 30 м2</li>
+                                    <li>-1 двуспальная кровать или 1 раскладной диван</li>
+                                    <li>-Кондиционер</li>
+                                    <li>-Интернет</li>
+                                    <li>-Телевизор</li>
+                                    <li>-2 комнаты</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-numbers">
+                        <div class="number" id="number3">
+                            <div class="number-text">
+                                <p>Семейный</p>
+                                <ul>
+                                    <li>-Площадь номера: 18 м2</li>
+                                    <li>-1 двуспальная кровать или 1 односпальная кровать</li>
+                                    <li>-Кондиционер</li>
+                                    <li>-Интернет</li>
+                                    <li>-Телевизор</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="number" id="number4">
+                            <div class="number-text">
+                                <p>Deluxe Plus</p>
+                                <ul>
+                                    <li>-Площадь номера: 45 м2</li>
+                                    <li>-2 односпальные кровати, 1 двуспальная кровать, 1 диван</li>
+                                    <li>-Кондиционер</li>
+                                    <li>-Интернет</li>
+                                    <li>-Телевизор</li>
+                                    <li>-3 комнаты</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="sub-title" id="sub-title-about">ГОСТЕВОЙ ДОМ «Valentina Guest House» , Абхазия</h2>
+                <div class="about">
+                    <img src="{{ url_for('static', filename='image/woman.png')}}" alt="woman">
+                    <div class="about-text">
+                        <p>
+                            Дорогие гости, Безопасность и комфорт гостей и персонала – это приоритет нашей работы. Мы
+                            круглосуточно следим за тем, что Министерство здравоохранения Российской Федерации,
+                            Федеральная служба по надзору в сфере защиты прав потребителей и Всемирная организация
+                            здравоохранения сообщают о распространении нового типа коронавируса (COVID-19) и
+                            беспрекословно выполняем рекомендации этих организаций и местных органов здравоохранения. Мы
+                            искренне сочувствуем всем, кого коснулось это бедствие и с огромным уважением относимся к
+                            врачам, местным сообществам и правительствам, которые задействованы в прямой борьбе с
+                            распространением коронавируса.
+                        </p>
+                    </div>
+                </div>
+                <h2 class="sub-title" id="sub-title-feedback">ОТЗЫВЫ О НАС</h2>
+                <div class="feedback-and-reviewer-icon">
+                    <div class="feedback">
+                        <div class="feedback-text-and-name">
+                            <div class="feedback-text">
+                                <p>Все было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в
+                                    рабочем
+                                    состоянии!</p>
+                            </div>
+                            <p id="reviewer-name">Vera</p>
+                        </div>
+                    </div>
+
+                    <div class="reviewer-icon">
+                        <img src="{{ url_for('static', filename='image/arrow-left.png')}}" alt="">
+                        <img src="{{ url_for('static', filename='image/reviewer-icon.png')}}" alt="" id="reviewer-icon">
+                        <img src="{{ url_for('static', filename='image/arrow-right.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content2">
+                <div class="footer-geolocation">
+                    <p class="footer-title">Геолокация</p>
+                    <img src="{{ url_for('static', filename='image/map.png')}}" alt="">
+                </div>
+                <div class="footer-cantacts">
+                    <p class="footer-title">Контакты</p>
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/telephone.png')}}" alt="">
+                            <span>8 (862) 279-56-89</span>
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/house.png')}}" alt="">
+                            <span>Абхазия, Цандрыпш</span>
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/geolocation-point.png')}}" alt="">
+                            <span>ул.Октябрьская, д.492</span>
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static', filename='image/mail.png')}}" alt="">
+                            <span>booking@valentinahouse.ru</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <p class="footer-title">Информация</p>
+                    <ul>
+                        <li><span>Заезд: с 16:00</span></li>
+                        <li><span>Выезд: до 12:00</span></li>
+                        <li><span>Бесплатный WI-FI</span></li>
+                        <li><span>Бесплатная парковка</span></li>
+                        <li><a href="#" style="text-decoration: underline;"><span>О нас</span></a></li>
+                        <li><a href="#" style="text-decoration: underline;"><span>Условия бронирования</span></a></li>
+                        <li><a href="#" style="text-decoration: underline;"><span>Политика конфиденциальности</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-weather">
+                    <p class="footer-title">Погода</p>
+                    <span>Яндекс.Погода : +17</span>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyrighting">© 2015–2021 – VALENTINA GUEST HOUSE</p>
+    </footer>
+</body>
+
+</html>
