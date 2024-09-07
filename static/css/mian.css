@@ -169,6 +169,11 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     line-height: 27.07px;
 }
 
+.number-text li:active{
+    overflow: visible;
+    white-space: normal;
+}
+
 #number1 {
     background-image: url("../image/number1.png");
 

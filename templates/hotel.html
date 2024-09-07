@@ -75,7 +75,7 @@
                         <a href="#"><img src="{{ url_for('static', filename='image/instagram.svg')}}" alt=""></a>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </header>
     <main class="main">
@@ -206,7 +206,10 @@
             <div class="footer-content2">
                 <div class="footer-geolocation">
                     <p class="footer-title">Геолокация</p>
-                    <img src="{{ url_for('static', filename='image/map.png')}}" alt="">
+
+                    <iframe
+                        src="https://yandex.com/map-widget/v1/?um=constructor%3A2a0acdccc52b58f644b58925b35be8d9ef5eba2ce3614688acc234d738ed2454&amp;source=constructor"
+                        width="320" height="240" frameborder="0"></iframe>
                 </div>
                 <div class="footer-cantacts">
                     <p class="footer-title">Контакты</p>
